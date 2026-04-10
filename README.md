@@ -1,6 +1,7 @@
 # 🖼️ Scanlation Tool PRO
 
 Herramienta local para scanlation que permite seleccionar áreas de texto en imágenes, traducirlas con IA local y reinsertarlas automáticamente.
+si vas a modificar y crear otra vercion me interesa probarlo.
 
 ## 🚀 Características
 
