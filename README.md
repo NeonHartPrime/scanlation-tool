@@ -80,9 +80,9 @@ python main.py
 ```
 
 ### 🤖 Configuración IA (LM Studio)
-* Asegúrate de tener LM Studio corriendo en:
+* Asegúrate de tener LM Studio corriendo, verifica en:
 ```bash
-verifica http://localhost:1234
+ http://localhost:1234
 ```
 * inicia el sv manualmente en cmd con:
 ```bash
@@ -99,13 +99,6 @@ gemma-3-4b
 ```bash
   font = ImageFont.truetype("comic.ttf", font_size)
 ```
-
-### 🧠 Flujo de trabajo
-* Cargar imagen
-* Seleccionar áreas de texto
-* Presionar "Traducir"
-* Editar texto si es necesario
-* Exportar imagen final
 
 ### 📌 Notas
 * No traduce áreas ya procesadas
