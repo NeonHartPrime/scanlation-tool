@@ -74,6 +74,11 @@ gemma-3-4b
 cabe aclarar que debe ser la vercion compatible con imagenes
 ```
 
+Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente.
+```bash
+  font = ImageFont.truetype("comic.ttf", font_size)
+```
+
 ### 🧠 Flujo de trabajo
 * Cargar imagen
 * Seleccionar áreas de texto
