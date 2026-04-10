@@ -44,7 +44,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-###▶️ Uso
+### ▶️ Uso
 ```bash
 python main.py
 ```
