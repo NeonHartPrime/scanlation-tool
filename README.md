@@ -33,7 +33,7 @@ git clone https://github.com/NeonHartPrime/scanlation-tool.git
 cd scanlation-tool
 ```
 
-### 2. Crear entorno virtual
+### 2. Crear entorno virtual "Opcional"
 ```bash
 python -m venv venv
 venv\Scripts\activate
