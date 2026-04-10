@@ -71,6 +71,7 @@ lms server start
 * Modelo Probado:
 ```bash
 gemma-3-4b
+cabe aclarar que debe ser la vercion compatible con imagenes
 ```
 
 ### 🧠 Flujo de trabajo
