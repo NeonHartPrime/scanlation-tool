@@ -1,26 +1,55 @@
 # 🖼️ Scanlation Tool PRO
 
 Herramienta local para scanlation que permite seleccionar áreas de texto en imágenes, traducirlas con IA local y reinsertarlas automáticamente.
-si vas a modificar y crear otra vercion me interesa probarlo.
+
+> 🔒 Funciona completamente offline usando IA local (LM Studio)
+
+---
+
+## 🖼️ Vista previa
+
+<p align="center">
+  <img src="assets/preview.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="assets/preview2.png" width="750"/>
+</p>
+
+<p align="center">
+  <img src="assets/example.png" width="750"/>
+</p>
+
+---
 
 ## 🚀 Características
 
-- 📂 Cargar imágenes (soporta imágenes largas tipo manhwa)
-- ✂️ Selección manual de múltiples áreas de texto
-- 🤖 OCR + traducción automática usando IA local (LM Studio)
+- 📂 Soporte para imágenes largas (manhwa/webtoon)
+- ✂️ Selección manual de múltiples áreas
+- 🤖 OCR + traducción automática con IA local
 - 📝 Edición manual del texto traducido
-- 🎯 Posicionamiento automático del texto dentro del área seleccionada
+- 🎯 Texto reposicionado automáticamente en su lugar original
 - 🧠 Evita retraducir áreas ya procesadas
 - 📤 Exportación final como imagen
-- 🧩 Interfaz modular (fácil de extender)
+- 🧩 Código modular (fácil de extender)
+
+---
+
+## ⚙️ Cómo funciona
+
+1. Cargar imagen  
+2. Seleccionar áreas de texto  
+3. Presionar **Traducir**  
+4. Editar texto si es necesario  
+5. Exportar imagen final  
 
 ---
 
 ## 🛠️ Tecnologías
 
 - Python 3
-- PyQt5 (UI)
-- Pillow (procesamiento de imagen)
+- PyQt5
+- Pillow
 - LM Studio (IA local)
 
 ---
@@ -49,33 +78,24 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-## 🖼️ Vista previa
-<p align="center">
-  <img src="assets/preview.png" width="700"/>
-</p>
-<p align="center">
-  <img src="assets/preview2.png" width="700"/>
-</p>
-<p align="center">
-  <img src="assets/example.png" width="700"/>
-</p>
 
-### ⚙️ Requisitos
-* Tener LM Studio corriendo en:
+### 🤖 Configuración IA (LM Studio)
+* Asegúrate de tener LM Studio corriendo en:
 ```bash
 verifica http://localhost:1234
 ```
-* inicia el sv manualmente con
+* inicia el sv manualmente en cmd con:
 ```bash
 lms server start
 ```
 * Modelo Probado:
 ```bash
 gemma-3-4b
-cabe aclarar que debe ser la vercion compatible con imagenes
 ```
+⚠️ Debe ser una versión compatible con imágenes
 
-Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente.
+### 🎨 Personalización
+* Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente.
 ```bash
   font = ImageFont.truetype("comic.ttf", font_size)
 ```
@@ -89,7 +109,8 @@ Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente.
 
 ### 📌 Notas
 * No traduce áreas ya procesadas
-* Optimizado para imágenes largas (webtoon/manhwa)
-* Funciona completamente offline (IA local)
+* Optimizado para imágenes largas
+* Funciona completamente offline
+* Pensado para flujo real de scanlation
 
 
