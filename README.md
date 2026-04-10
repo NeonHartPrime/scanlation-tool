@@ -29,7 +29,7 @@ Herramienta local para scanlation que permite seleccionar áreas de texto en im�
 ### 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/scanlation-tool.git
+git clone https://github.com/NeonHartPrime/scanlation-tool.git
 cd scanlation-tool
 ```
 
@@ -48,13 +48,24 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+## 🖼️ Vista previa
+<p align="center">
+  <img src="assets/preview.png" width="700"/>
+</p>
+<p align="center">
+  <img src="assets/preview2.png" width="700"/>
+</p>
+<p align="center">
+  <img src="assets/example.png" width="700"/>
+</p>
 
 ### ⚙️ Requisitos
 * Tener LM Studio corriendo en:
 ```bash
 verifica http://localhost:1234
-
-inicia el sv manualmente con
+```
+* inicia el sv manualmente con
+```bash
 lms server start
 ```
 * Modelo Probado:
