@@ -31,3 +31,47 @@ Herramienta local para scanlation que permite seleccionar áreas de texto en im�
 ```bash
 git clone https://github.com/TU_USUARIO/scanlation-tool.git
 cd scanlation-tool
+```
+
+### 2. Crear entorno virtual
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Instalar dependencias
+```bash
+pip install -r requirements.txt
+```
+
+###▶️ Uso
+```bash
+python main.py
+```
+
+### ⚙️ Requisitos
+* Tener LM Studio corriendo en:
+```bash
+verifica http://localhost:1234
+
+inicia el sv manualmente con
+lms server start
+```
+* Modelo Probado:
+```bash
+gemma-3-4b
+```
+
+### 🧠 Flujo de trabajo
+* Cargar imagen
+* Seleccionar áreas de texto
+* Presionar "Traducir"
+* Editar texto si es necesario
+* Exportar imagen final
+
+### 📌 Notas
+* No traduce áreas ya procesadas
+* Optimizado para imágenes largas (webtoon/manhwa)
+* Funciona completamente offline (IA local)
+
+
