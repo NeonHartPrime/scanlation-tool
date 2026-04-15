@@ -24,24 +24,39 @@ Herramienta local para scanlation que permite seleccionar áreas de texto en im�
 
 ## 🚀 Características
 
-- 📂 Soporte para imágenes largas (manhwa/webtoon)
-- ✂️ Selección manual de múltiples áreas
-- 🤖 OCR + traducción automática con IA local
-- 📝 Edición manual del texto traducido
-- 🎯 Texto reposicionado automáticamente en su lugar original
-- 🧠 Evita retraducir áreas ya procesadas
-- 📤 Exportación final como imagen
-- 🧩 Código modular (fácil de extender)
+* 📂 Soporte para imágenes largas (manhwa/webtoon)
+* ✂️ Selección manual de múltiples áreas
+* 🧠 OCR (extracción de texto) por lote o por selección individual
+* 🔁 Re-OCR por cuadro para corregir errores fácilmente
+* 📝 Edición manual del texto con sincronización en tiempo real
+* 🔤 Sistema de **fuentes dinámicas** (soporte `.ttf` / `.otf`)
+* 🎨 Renderizado de texto con **stroke y auto-ajuste inteligente**
+* 🧩 Preview visual en tiempo real (WYSIWYG)
+* ⚡ Sistema optimizado con **cache de renderizado** (sin lag)
+* 🗑️ Eliminación de selecciones con tecla `Delete`
+* 📤 Exportación final con fondo semitransparente y estilo profesional
+* 🧩 Código modular y escalable (fácil de extender)
 
 ---
 
 ## ⚙️ Cómo funciona
 
-1. Cargar imagen  
-2. Seleccionar áreas de texto  
-3. Presionar **Traducir**  
-4. Editar texto si es necesario  
-5. Exportar imagen final  
+1. Cargar imagen
+2. Seleccionar áreas de texto
+3. Presionar **Extraer texto (OCR)**
+4. (Opcional) Re-extraer texto en áreas específicas
+5. Editar texto y ajustar fuente si es necesario
+6. Exportar imagen final
+
+---
+
+## 🆕 Novedades recientes
+
+* ⚡ Mejora masiva de rendimiento en el preview
+* 🔤 Selector de fuentes por cuadro de texto
+* 🔁 Re-OCR individual sin reprocesar toda la imagen
+* 🎨 Renderizado más profesional (stroke + fondo optimizado)
+* 🧠 Sistema de cache para evitar render innecesario
 
 ---
 
@@ -91,11 +106,12 @@ lms server start
 * Modelo Probado:
 ```bash
 gemma-3-4b
+qwen2vl
 ```
 ⚠️ Debe ser una versión compatible con imágenes
 
 ### 🎨 Personalización
-* Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente.
+* Para cambiar la fuente ve a "text_render.py" cambia "comic.ttf" por tu fuente. "no es necesario en nuevas verciones"
 ```bash
   font = ImageFont.truetype("comic.ttf", font_size)
 ```
